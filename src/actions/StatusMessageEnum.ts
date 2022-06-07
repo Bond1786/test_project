@@ -1,0 +1,6 @@
+export enum StatusMessageEnum {
+  SUCCESS = 'SUCCESS',
+  FAIL = 'FAIL',
+  DB_DISCONNECTED = 'DB_DISCONNECTED',
+  INVALID_TOKEN = 'INVALID_TOKEN'
+}

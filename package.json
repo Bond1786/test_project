@@ -1,0 +1,79 @@
+{
+  "name": "@test/test_client",
+  "version": "0.2.0",
+  "description": "UDE",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "yarn build && serve dist",
+    "test": "jest --env=jsdom"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "public/*"
+  ],
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/build"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+    },
+    "preset": "ts-jest",
+    "collectCoverage": true
+  },
+  "author": "I18357",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.7",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@storybook/preset-scss": "^1.0.3",
+    "@types/jest": "^26.0.23",
+    "@types/node": "16.10.3",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "axios": "^0.24.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^25.3.0",
+    "react-json-view": "^1.21.3",
+    "react-redux": "^7.2.6",
+    "sass": "^1.43.4",
+    "sass-loader": "10.1.1",
+    "serve": "^12.0.1",
+    "terser-webpack-plugin": "^2.3.2",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "4.0.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "bootstrap": "^5.1.3",
+    "css-loader": "5.2.6",
+    "file-loader": "^6.2.0",
+    "primeicons": "^4.1.0",
+    "primereact": "^6.6.0",
+    "react": "^17.0.1",
+    "react-bootstrap": "^2.0.0",
+    "react-bootstrap-icons": "^1.6.1",
+    "react-dom": "^17.0.1",
+    "style-loader": "2.0.0",
+    "testing-library": "^0.0.2",
+    "typescript-string-operations": "^1.4.1",
+    "url-loader": "^4.1.1"
+  }
+}
