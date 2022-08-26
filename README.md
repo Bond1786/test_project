@@ -1,4 +1,4 @@
-# UDE work flow
+# Project run
 ## Prerequisites:
 - Download & Install [nodejs](https://nodejs.org/en/download/)
 - Download & Install [yarn](https://yarnpkg.com/) (Depends on Node.js)
